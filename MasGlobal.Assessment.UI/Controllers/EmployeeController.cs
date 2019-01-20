@@ -3,6 +3,7 @@ using MasGlobal.Assessment.Entities.APIS.Response;
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Formatting;
@@ -11,10 +12,15 @@ using System.Web.Http;
 
 namespace MasGlobal.Assessment.UI.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class EmployeeController : ApiController
     {
         [HttpGet]
-        public async Task<HttpResponseMessage> GetAsync(int? id)
+        [DefaultValue(null)]
+        [Route("api/employee/{id?}")]
+        public async Task<HttpResponseMessage> GetAsync(int? id=null)
         {
             try
             {
@@ -46,8 +52,6 @@ namespace MasGlobal.Assessment.UI.Controllers
                 return Request.CreateResponse(HttpStatusCode.BadRequest, msg, FormatMediaTypeJson());
             }
         }
-
-
 
         public static JsonMediaTypeFormatter FormatMediaTypeJson()
         {
