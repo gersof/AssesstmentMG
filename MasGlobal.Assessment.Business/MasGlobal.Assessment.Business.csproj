@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MasGlobal.Assessment.DataAccess\MasGlobal.Assessment.DataAccess.csproj" />
+    <ProjectReference Include="..\MasGlobal.Assessment.Entities\MasGlobal.Assessment.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
