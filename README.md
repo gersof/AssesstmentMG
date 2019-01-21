@@ -24,6 +24,6 @@ The backend API has a "swagger" for test and documentation Web API
  how you can see below, you must send null id by getting all employees:
 ![Step7](https://raw.githubusercontent.com/gersof/AssesstmentMG/master/Images/7.png)
 
- you must send id by getting informarion for one employee:
+ you must send id by getting information for one employee:
  ![Step7](https://raw.githubusercontent.com/gersof/AssesstmentMG/master/Images/8.png)
 
