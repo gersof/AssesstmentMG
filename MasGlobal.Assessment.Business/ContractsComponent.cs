@@ -1,8 +1,5 @@
 ﻿using MasGlobal.Assessment.Entities;
 using MasGlobal.Assessment.Entities.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MasGlobal.Assessment.Business
 {
