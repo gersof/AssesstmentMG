@@ -5,13 +5,13 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Assessment.UI", "MasGlobal.Assessment.UI\MasGlobal.Assessment.UI.csproj", "{FFA152D2-801D-444D-920F-E3557406B816}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Assessment.UI.Tests", "MasGlobal.Assessment.UI.Tests\MasGlobal.Assessment.UI.Tests.csproj", "{C70D926A-C2BB-42CC-BB4E-B443A65C1853}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasGlobal.Assessment.Entities", "MasGlobal.Assessment.Entities\MasGlobal.Assessment.Entities.csproj", "{645B45EE-64D9-480C-9329-A6CDA2367215}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Assessment.Entities", "MasGlobal.Assessment.Entities\MasGlobal.Assessment.Entities.csproj", "{645B45EE-64D9-480C-9329-A6CDA2367215}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasGlobal.Assessment.DataAccess", "MasGlobal.Assessment.DataAccess\MasGlobal.Assessment.DataAccess.csproj", "{A90FBAB2-1B2F-4540-BE4C-885DF335F916}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Assessment.DataAccess", "MasGlobal.Assessment.DataAccess\MasGlobal.Assessment.DataAccess.csproj", "{A90FBAB2-1B2F-4540-BE4C-885DF335F916}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasGlobal.Assessment.Business", "MasGlobal.Assessment.Business\MasGlobal.Assessment.Business.csproj", "{82A31DF5-F9A1-4F03-A2B3-98EC820E17F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Assessment.Business", "MasGlobal.Assessment.Business\MasGlobal.Assessment.Business.csproj", "{82A31DF5-F9A1-4F03-A2B3-98EC820E17F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.Assessment.Business.Test", "MasGlobal.Assessment.Business.Test\MasGlobal.Assessment.Business.Test.csproj", "{D2B2A368-0A7B-4AC9-84F7-FD6E9D094FD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		{FFA152D2-801D-444D-920F-E3557406B816}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFA152D2-801D-444D-920F-E3557406B816}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFA152D2-801D-444D-920F-E3557406B816}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C70D926A-C2BB-42CC-BB4E-B443A65C1853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C70D926A-C2BB-42CC-BB4E-B443A65C1853}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C70D926A-C2BB-42CC-BB4E-B443A65C1853}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C70D926A-C2BB-42CC-BB4E-B443A65C1853}.Release|Any CPU.Build.0 = Release|Any CPU
 		{645B45EE-64D9-480C-9329-A6CDA2367215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{645B45EE-64D9-480C-9329-A6CDA2367215}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{645B45EE-64D9-480C-9329-A6CDA2367215}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{82A31DF5-F9A1-4F03-A2B3-98EC820E17F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82A31DF5-F9A1-4F03-A2B3-98EC820E17F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82A31DF5-F9A1-4F03-A2B3-98EC820E17F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B2A368-0A7B-4AC9-84F7-FD6E9D094FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B2A368-0A7B-4AC9-84F7-FD6E9D094FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B2A368-0A7B-4AC9-84F7-FD6E9D094FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B2A368-0A7B-4AC9-84F7-FD6E9D094FD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
