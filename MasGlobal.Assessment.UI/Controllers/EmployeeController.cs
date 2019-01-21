@@ -17,11 +17,18 @@ namespace MasGlobal.Assessment.UI.Controllers
     /// </summary>
     public class EmployeeController : ApiController
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         [DefaultValue(null)]
         [Route("api/employee/{id?}")]
         public async Task<HttpResponseMessage> GetAsync(int? id=null)
         {
+            var result = new ResponseMessage();
+
             try
             {
                 var component = await new EmployeesComponent().GetAll(id);
@@ -43,16 +50,24 @@ namespace MasGlobal.Assessment.UI.Controllers
 
                     response.Add(employee);
                 }
-
-                return Request.CreateResponse(HttpStatusCode.OK, response, FormatMediaTypeJson());
+                result.employees = response;
+                result.status = true;
             }
             catch (Exception ex)
             {
-                var msg = new { status = false, mensaje = ex.Message.ToString() };
-                return Request.CreateResponse(HttpStatusCode.BadRequest, msg, FormatMediaTypeJson());
+                result.status = false;
+                result.message = ex.Message.ToString();
+                return Request.CreateResponse(HttpStatusCode.BadRequest, result, FormatMediaTypeJson());
             }
+
+            return Request.CreateResponse(HttpStatusCode.OK, result, FormatMediaTypeJson());
+
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public static JsonMediaTypeFormatter FormatMediaTypeJson()
         {
             var Formatter = new JsonMediaTypeFormatter();
@@ -65,5 +80,7 @@ namespace MasGlobal.Assessment.UI.Controllers
 
             return Formatter;
         }
+
+        
     }
 }

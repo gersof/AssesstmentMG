@@ -29,15 +29,15 @@ namespace MasGlobal.Assessment.Business
 
         public async Task<IEnumerable<Employee>> GetAll(int? id)
         {
-            var agentResponse = await repositoryEmployee.GetEntityAsync<IEnumerable<Entities.Employees.EmployeeResponse>>(Path);
+            var employeeResponse = await repositoryEmployee.GetEntityAsync<IEnumerable<Entities.Employees.EmployeeResponse>>(Path);
 
-            agentResponse = (id == null) ? agentResponse : agentResponse.Where(a => a.id == id).ToList();
+            employeeResponse = (id == null) ? employeeResponse : employeeResponse.Where(a => a.id == id).ToList();
 
-            if (agentResponse.Count() > 0)
+            if (employeeResponse.Count() > 0)
             {
                 List<Employee> response = new List<Employee>();
 
-                foreach (var item in agentResponse)
+                foreach (var item in employeeResponse)
                 {
                     ContractsFactory contract = new ContractsComponent();
                     IContracts type = contract.GetContractType(item);
