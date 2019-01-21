@@ -15,9 +15,6 @@ namespace MasGlobal.Assessment.Business
         {
 
         }
-
-
-
         public override IContracts GetContractType(Entities.Employees.EmployeeResponse employee)
         {
             switch (employee.contractTypeName)
